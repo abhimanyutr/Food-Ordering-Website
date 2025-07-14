@@ -238,3 +238,75 @@
    font-family: "Cormorant Upright", serif;
  color: rgb(63, 64, 64);
 }
+
+
+/* Media Query */
+@media screen and (max-width: 400px)
+    {
+  *{
+    margin: 0;
+    padding: 0;
+  }  
+
+ 
+.main{
+    width: 949px;
+    height: 609px;
+   
+}
+.navBar{
+    width: 949px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.145);
+    
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    
+}
+.logo{
+    width: 55px;
+    height: 55px;
+    background-size: cover;
+}
+.navBar h1{
+    font-size: medium;
+}
+.frame{
+    display: none;
+}
+.heading h1{
+    font-size: xx-large;
+}
+.heading p{
+    font-size: xx-large;
+}
+.main .toprow{
+    width: 800px;
+    height: 200px;
+    justify-content: space-evenly;
+    
+}
+.toprow .col{
+    width: 180px;
+    height: 180px;
+}
+.toprow h1{
+    font-size: small;
+}
+.toprow h1:hover{
+    font-size: small;
+}
+.starters .rows{
+    width: 949px;
+}
+.starters h2{
+    font-size: medium;
+}
+.starters h1{
+    font-size: medium;
+}
+.starters .btn{
+    font-size: small;
+}
+}

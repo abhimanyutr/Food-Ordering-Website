@@ -458,3 +458,132 @@ background-position: center;
     font-weight: bold;
     box-shadow: 0px 0px 1px 1px  ;
 }
+
+
+/* Media Query */
+@media screen and (max-width: 400px)
+    {
+  *{
+    margin: 0;
+    padding: 0;
+  }  
+
+ 
+.main{
+    width: 900px;
+    height: 899px;
+   
+}
+.navBar{
+    width: 900px;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.145);
+    
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    
+}
+.logo{
+    width: 66px;
+    height: 66px;
+    background-size: cover;
+}
+.navBar h1{
+    font-size: medium;
+}
+.welc{
+    font-size: medium;
+    text-align: center;
+    top: 200px;
+    left: 150px;
+}
+.navBar .row{
+    width: 34%;
+    height: 100%;
+    position: relative;
+    left:110px;
+    /* background-color: aqua;   */
+}
+.navBar .login{
+    right: 40px;
+}
+.rows{
+    
+    height:200px ;
+    
+}
+.middle{
+    width: 900px;
+    height: 380px; 
+   
+}
+.middle .two{
+    width: 470px;
+}
+.r1 h1{
+    font-size: medium;
+}
+.r1 h2{
+    font-size: small;
+    padding-left: 3px;
+}
+.r1 h4{
+    font-size: small;
+    padding-left: 3px;
+}
+.r1 button{
+    font-size: small;
+    padding: 2px;
+    
+}
+.order img{
+    width: 250px;
+    height: 200px;
+   
+}
+#im1{
+   
+    top:70px;
+    left:120px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+}
+
+#im2{
+    left:120px;
+    top:300px
+}
+#im3{
+   top: 70px;
+}
+.c2{
+    
+    padding-left: 0px;
+    top:300px;
+    
+    
+}
+.service{
+    width: 850px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.footer{
+    font-size: x-small;
+}
+.f-logo{
+    font-size: medium;
+}
+.footer iframe{
+    width: 200px;
+    height: 80px;
+}
+
+}

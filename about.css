@@ -145,7 +145,62 @@
   transform: scale(1.1); /* Scales only the image */
 }
 
+/* Media Query */
+@media screen and (max-width: 400px)
+    {
+  *{
+    margin: 0;
+    padding: 0;
+  }  
+    
+ 
+.main{
+    width: 1339px;
+    height: 2079px;
+    
+   
+}
+.navBar{
+    width: 1339px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.145);
+    
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    
+}
+.logo{
+    width: 55px;
+    height: 55px;
+    background-size: cover;
+}
+.navBar h1{
+    font-size: medium;
+}
+.frame{
+    display: none;
+}
 
+}
+
+.about-images .image-card{
+  display: block;
+  width: 1270px;
+  height: 700px;
+
+}
+.about-images{
+  padding-top: 500px;
+}
+.about-section{
+  width: 1250px;
+  position: relative;
+  left: 30px;
+  color: aliceblue;
+  margin: 0;
+  
+}
 
 
 
