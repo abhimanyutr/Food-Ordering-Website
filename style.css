@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 699px;
+    background-image: url("./images/home-bg.jpg"); 
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;  
+}
+.navBar{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.145);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    
+}
+.logo{
+    background-image: url("./images/logo.png");
+    width: 80px;
+    height: 100%;
+    background-size: cover;
+}
+.navBar h1{
+    color: rgba(255, 255, 255, 0.956);
+      font-family: "Rammetto One", sans-serif;
+      padding-left: 20px;
+      padding-top:20px ;
+       text-shadow: 1px 2px 3px black;
+}
+.navBar h1:hover{
+    text-shadow: 1px 2px 5px black;
+      
+}
+.navBar .row{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    left:380px;
+    /* background-color: aqua;   */
+}
+.row ul{
+    display: flex;
+    justify-content: space-evenly;
+    /* padding-top: 6%; */
+    margin: 2% 0% 2% 0%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bolder;
+   
+}
+.row input{
+    background-color: rgba(141, 148, 148, 0.197);
+    border-radius: 13px;
+    border: 0;
+    color: #2f2e2e;
+    padding: 3px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.row input:hover{
+    background-color: rgb(253, 251, 250);
+}
+.row a{
+    text-decoration: none;
+    color: rgb(253, 253, 255);
+}
+.row a:hover{
+    border: 1px solid rgba(255, 255, 255, 0.47);
+    color: rgb(242, 242, 242);
+    border-radius: 20px;
+    padding: 10px;
+    background-color:  rgba(222, 228, 228, 0.048);
+    transition: 0.4s ease-out;
+    font-weight: bolder;
+}
+
+
+.welc{
+    width: 65%;
+    height: 200px;
+    position: relative;
+    top: 250px;
+    left: 80px;
+    
+}
+.welc h1{
+  font-size: 65px;
+  font-family: "Caprasimo", serif;
+   color: rgb(247, 246, 243);
+   text-shadow: 2px 3px 4px rgb(255, 166, 0);
+}
+.welc h4{
+      font-family: "Tangerine", cursive;
+      font-weight: bolder;
+      font-size: 60px;
+      text-shadow: 1px 3px 4px rgb(0, 0, 0);
+     color: rgb(246, 181, 4);
+
+}
+.welc button{
+    background-color: rgb(204, 124, 3);
+    color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin: 20px;
+    transition: transform .6s;
+}
+.welc button:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 170, 0, 0.914);
+}
+
+.navBar .login{
+    width: 8%;
+    position: absolute;
+    right: 10px;
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    color: rgba(255, 255, 255, 0.611);
+}
+.navBar .login:hover{
+   color: rgb(248, 248, 248); 
+   font-size: 19px;
+}
+
+
+
+.frame{
+   width: 250px;
+   height: 80px;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   animation: slider 12s  infinite;
+}
+
+.items{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(67, 39, 20);
+}
+.rows{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:70%;
+    height: 300px;
+    background-color: rgb(251, 252, 252);
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 250px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #898383;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.order{
+width: 100%;
+height: 590px;
+background-color: white;
+position: relative;
+display: flex;
+}
+.order .col{
+    width: 50%;
+}
+.col img{
+    width: 450px;
+    height: 350px;
+}
+.col{
+    position: relative;
+}
+.c1{
+  
+    background-color: rgba(162, 142, 142, 0);
+}
+img{
+    position: absolute;
+}
+#im1{
+   
+    top:30px;
+    left:50px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+}
+@keyframes move{
+    0%{
+       
+       
+    }
+    50%{
+        transform: rotatey(360deg);
+    }
+    100%{
+        
+    }
+}
+#im2{
+
+    top:400px;
+    left:100px;
+}
+#im3{
+    top:230px;
+    left:400px;
+}
+
+.c2{
+    
+    padding-left: 250px;
+    top:300px;
+    
+}
+.footer{
+    margin-top: 200px;
+    background-color: rgba(0, 0, 0, 0.992);
+    width: 100%;
+    height: 300px;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+    
+}
+.coll{
+    width: 20%;
+    height: 80%;
+   
+}
+.f-logo{
+    font-size: xx-large;
+    padding: 10px;
+}
+.f-logo:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.3);
+}
+.item img{
+    background-size: cover;
+    
+}
+
+.middle{
+    width: 100%;
+    height: 620px; 
+   
+}
+.middle .cole{
+    position:absolute;
+    margin: 10px;
+    background-color: rgb(96, 118, 137);
+    border-radius: 15px;
+    transition: transform 1s;
+}
+.middle .rows{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(173, 168, 168),rgb(0, 0, 0),rgb(255, 255, 255));
+}
+
+.middle .one{
+   top:10px;
+   left: 10px;
+    height: 61%;
+    width: 20%;
+    background-color: rgb(139, 178, 178);
+    background-image: url("./images/m-fastfood.jpg");
+     background-size: cover;
+}
+.middle .one1{
+   top:10px;
+   left: 22.5%;
+    height: 61%;
+    width: 20%;
+    background-color: rgb(139, 178, 178);
+    background-image: url("./images/m-cake.jpg");
+     background-size: cover;
+}
+.middle .two{
+    top:10px;
+    left:44.5%;
+   width: 53.5%;
+   height: 35%;
+   background-image: url("./images/m-chicken.jpg"); 
+     background-size: cover;
+     background-position: center;
+}
+.middle .three{
+     bottom:10px;
+    left:44.5%;
+   width: 14%;
+   height: 53.5%;
+background-image: url("./images/m-shake.jpg");
+background-position: center;
+     background-size: cover;
+}
+.middle .three3{
+     bottom:10px;
+    left:60.5%;
+   width: 14%;
+   height: 53.5%;
+background-image: url("./images/m-burger.jpg");
+background-position: center;
+     background-size: cover;
+}
+.middle .four{
+     bottom:31%;
+    right:10px;
+   width: 21.5%;
+   height: 24%;
+background-image: url("./images/m-biriyani.jpg");
+     background-size: cover;
+}
+.middle .five{
+     bottom:10px;
+    right:10px;
+   width: 21.5%;
+   height: 24%;
+background-image: url("./images/m-fruits2.jpg");
+     background-size: cover;
+}
+.middle .six{
+     bottom:10px;
+    left:10px;
+   width: 42%;
+   height: 28%;
+background-image: url("./images/m-sandwich.jpg");
+background-position: center;
+     background-size: cover;
+}
+
+.middle .cole:hover{
+    transform: scale(1.02);
+    box-shadow: 1px 1px 2px 2px rgb(0, 0, 0);
+}
+.service{
+    width: 100%;
+    height: 200px;
+   
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.service h2{
+    text-align: center;
+    padding-left: 50px;
+}
+.service h6{
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.ser-col{
+    width: 450px;
+    text-align: center;
+}
+.ser-col img{
+    margin-right: 80px;  
+}
+.ser-col h3,p{
+    margin-left: 50px;   
+}
+.service-head{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.r1 h1{
+    font-family:"Rampart One", sans-serif; 
+    color: #ffd900;
+    text-shadow: 1px 1px 2px black;
+    animation-name: textani;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    padding-top: 10PX;
+    padding-left: 3PX;
+}
+@keyframes textani{
+    50%{
+        transform: scaleY(1.2);
+    }
+}
+
+.r1 h4,h2{
+    font-family: "Chewy", system-ui;
+    color: #edeae7;
+}
+.r1 h2{
+    color: #ffffff;
+    
+}
+.r1 button{
+    background-color: #f89a03;
+    padding: 4px;
+   border: 0;
+    margin-left: 30px;
+    
+    font-weight: bold;
+}
+.r1 button:hover{
+    background-color: #ffb011b6;
+    font-weight: bold;
+    box-shadow: 0px 0px 1px 1px  ;
+}

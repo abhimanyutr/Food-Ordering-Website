@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Kart</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libertinus+Math&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=Rammetto+One&family=Sevillana&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Caprasimo&family=Chewy&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Fjalla+One&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libertinus+Mono&family=Lobster&family=Michroma&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Caprasimo&family=Chewy&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Eagle+Lake&family=Fjalla+One&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libertinus+Math&family=Libertinus+Mono&family=Lobster&family=Michroma&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rampart+One&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Caprasimo&family=Chewy&family=Cormorant+Upright:wght@300;400;500;600;700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Eagle+Lake&family=Fjalla+One&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libertinus+Math&family=Libertinus+Mono&family=Lobster&family=Michroma&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rampart+One&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- CSS Linking -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Fjalla+One&family=Libertinus+Mono&family=Lobster&family=Michroma&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Caprasimo&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Fjalla+One&family=Libertinus+Mono&family=Lobster&family=Michroma&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Caprasimo&family=Chewy&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Fjalla+One&family=Libertinus+Mono&family=Lobster&family=Michroma&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    
+        <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Awosome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="navBar">
+            <div class="logo">
+
+            </div>
+            <h1>F <span style="color: chocolate;">OO</span> D KART</h1>
+            <div class="row">
+                <ul type="none" style="margin-bottom: 10px;">
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+                 
+                    <input type="text" placeholder="🔍 Search food ">
+                
+            </div>
+            <!-- <div class="frame">
+
+            </div> -->
+                
+            <div class="login"><i class="fa-solid fa-user">  </i><h1></h1> Login </div>
+            
+        </div>
+        <div class="welc">
+            <h4>Welcome to <span>The FoodKart Hub</span></h4>
+            <h1>Enjoy  Fresh & Tasty dishes delivered right to your door</h1>
+            <button><a href="./menu.html" style="text-decoration: none; color: aliceblue;"><b>Explore Menu</b></a></button>
+             <button><a href="./menu.html" style="text-decoration: none; color: aliceblue;"><b>Buy Now</b></a></button>
+        </div>
+
+    </div>
+    <div class="middle"> 
+        <div class="rows r1">
+            <div class="cole one"><div style="padding-top: 5%; margin-left: 10%; "><h1>30% Save</h1> <h4>Italian Veg Pizza</h4><button>Order Now</button></h2></div></div>
+            <div class="cole one1"><h1>Free Delivery</h1><h4>Free Delivery on All Cake Orders Above ₹399</h4><button>Order Now</button></div>
+            <div class="cole two"> <h1>Hot & Crispy Chicken </h1><h2>Just ₹199 Today!</h2><button>Order Now</button></div>
+            <div class="cole three"><h1>Chocolate Shake Combo</h1> <h2>Just ₹99!</h2><button>Order Now</button></div>
+            <div class="cole three3"><h1>Big Burger Deal </h1><h2>Flat 30% OFF!</h2> <button>Order Now</button></div>
+            <div class="cole four"><h1>Spicy Deal</h1><h2>Flat 20% OFF on Mutton Biryani</h2></div>
+            <div class="cole five"><h1 style="color: rgb(255, 251, 0); margin-left: 9%;">Flat 25% OFF Today! </h1></div>
+            <div class="cole six"><h1>Buy 4 Sandwich, Get 1 FREE </h1><h4>Today Only!</h4><button>Order Now</button></div>
+        </div>
+        <div class="service-head">
+            <h6 style="color: rgb(229, 164, 0);">OUR SERVICES</h6>
+            <h1>How Does It work?</h1>
+        </div>
+    <div class="service">
+        <div class="ser-col">
+          <img src="https://imgs.search.brave.com/c8sv9J6xESR9Tbk-eTF8Sjc-EF5koatVTpeM4qY91vw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA2/MDc1MjcwNi92ZWN0/b3Ivb25saW5lLW9y/ZGVyLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1ZV2ZQb2VL/SzBTa1hqR2ZZZGpQ/eU9DNGctZ1hyT0dR/Z3FCLTBCYVNBcWNV/PQ" alt="" width="50px" height="60px"><br><br><br>
+          <h3>Easy To Order</h3>
+          <p>You only need a few steps in ordering food</p>
+        </div>
+        <div class="ser-col">
+          <img src="https://www.shutterstock.com/image-vector/shipping-fast-delivery-truck-clock-600nw-1205300119.jpg" alt="" width="90px" height="60px"><br><br><br>
+       <h3>Fast Delivery</h3>
+       <p>Always that is always ontime even faster</p>
+        </div>
+        <div class="ser-col">
+<img src="https://imgs.search.brave.com/95D_cnigdpWjw9wtnI3Shi4ppqqCXLAnNL8hfm33Rdo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dmVjdG9yc3RvY2su/Y29tL2kvcHJldmll/dy0xeC84OC83NC9o/aWdoLXF1YWxpdHkt/dmVjdG9yLTM4MTc4/ODc0LmpwZw" alt="" width="55px" height="60px"><br><br><br>
+        
+<h3>Best Quality</h3>
+<p>Not only fast us in quality is also number one</p></div>
+    </div>   
+    
+    <section class="order">
+        <div class="col c1">
+            <img id="im1" src="./images/boy.jpeg" alt="">
+            <img id="im2" src="./images/onlineordering.jpg" alt="">
+            <img id="im3" src="./images/pizza2.jpg" alt="">
+
+        </div>
+        <div class="col c2">
+            <h1>No time to waste: <br>Take your first online order...</h1>
+            <h3>How to get Started</h3>
+            <ol>
+                <li>Simply Create an account</li>
+                <li>Browse the menu and choose your favorate dishes </li>
+                <li>Add items to your cart and Proceed to checkout</li>
+                <li>Place your order and enjoy your meal</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="coll">
+            <h1>FoodKart</h1><br>
+            <h6>3568 N Street 72 <br>
+                Kaloor, Kochi, Kerala, India </h6>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31434.452791160988!2d76.27572714640186!3d9.991512867245484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d13ee1347b1%3A0x89c9267d1aeeaac4!2sKaloor%2C%20Kochi%2C%20Ernakulam%2C%20Kerala!5e0!3m2!1sen!2sin!4v1751808158195!5m2!1sen!2sin"
+                width="300px" height="100px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="coll">
+            <h3>Services</h3><br>
+            <h6>Online Ordering</h6>
+            <h6>Delivery</h6>
+            <h6>Fresh Food</h6>
+            <h6>Cutomer Support</h6>
+            <h6>Secure Payment</h6>
+        </div>
+        <div class="coll">
+            <h3>Resources</h3><br>
+            <h6>Contact Us</h6>
+            <h6>Pricing</h6>
+            <h6>Terms & conditions</h6>
+            <h6>Privacy Policy</h6>
+            <h6>Refund & Cancellation Policy</h6>
+        </div>
+        <div class="coll">
+            <h2>Follow Us</h2> <br>
+            <i class="f-logo fa-brands fa-facebook-f"></i>
+            <i class="f-logo fa-brands fa-square-instagram"></i>
+            <i class="f-logo fa-brands fa-twitter"></i>
+            <i class="f-logo fa-brands fa-youtube"></i>
+
+        </div>
+    </section>
+</body>
+
+</html>
