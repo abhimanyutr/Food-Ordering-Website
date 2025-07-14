@@ -461,7 +461,7 @@ background-position: center;
 
 
 /* Media Query */
-@media screen and (max-width: 400px)
+@media screen and (max-width: 500px)
     {
   *{
     margin: 0;
